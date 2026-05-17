@@ -13,7 +13,8 @@
 | ------ |:-------------:| ----------------------
 | 1      | 23520070      | Phạm Ngô Quốc Anh      
 | 2      | 21520930      | Nguyễn Văn Đức Huy        
-| 3      | 19521326      | Trịnh Công Danh        
+| 3      | 23520021      | Nguyễn Tri An       
+| 3      | 22521188      | Phạm Phú Minh Quân
 
 ## GIỚI THIỆU MÔN HỌC
 * **Tên môn học:** Máy học

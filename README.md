@@ -22,7 +22,7 @@
 * **Năm học:** HK2 (2025 - 2026)
 * **Giảng viên**: Võ Nguyễn Lê Duy
 
-# HƯỚNG DẪN CHẠY DEMO
+### HƯỚNG DẪN CHẠY DEMO
 
 1. Yêu cầu hệ thống & Cài đặt thư viện
 Trước khi chạy, hãy đảm bảo bạn đã cài đặt Python (khuyến nghị phiên bản 3.8 trở lên). Sau đó, cài đặt các thư viện cần thiết bằng lệnh sau:

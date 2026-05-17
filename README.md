@@ -21,4 +21,37 @@
 * **Năm học:** HK2 (2025 - 2026)
 * **Giảng viên**: Võ Nguyễn Lê Duy
 
+1. Yêu cầu hệ thống & Cài đặt thư viện
+Trước khi chạy, hãy đảm bảo bạn đã cài đặt Python (khuyến nghị phiên bản 3.8 trở lên). Sau đó, cài đặt các thư viện cần thiết bằng lệnh sau:
 
+```bash
+pip install fastapi uvicorn pydantic joblib pandas numpy scikit-learn xgboost
+```
+
+2. Cấu trúc thư mục chuẩn bị
+Để ứng dụng hoạt động chính xác, hãy đảm bảo cấu trúc các file trong repo của bạn tuân thủ định dạng sau (đặc biệt là các file mô hình .pkl nằm trong thư mục Model):
+```bash
+├── Model/
+│   ├── diabetes_xgb_model.pkl
+│   ├── logistic_regression.pkl
+│   └── random_forest_diabetes_model.pkl
+├── app.py
+├── index.html
+├── style.css
+└── script.js
+```
+3. Khởi chạy Ứng dụng
+  Cách 1: Chạy trực tiếp file python
+  ```bash
+  python app.py
+  ```
+  Cách 2: Sử dụng lệnh uvicorn
+  ```bash
+  uvicorn app:app --host 127.0.0.1 --port 8000 --reload
+  ```
+
+4. Truy cập giao diện và sử dụng
+   Sau khi khởi chạy thành công, mở trình duyệt web và truy cập vào đường dẫn:
+   ```bash
+   http://127.0.0.1:8000
+   ```

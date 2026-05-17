@@ -12,7 +12,7 @@
 | STT    | MSSV          | Họ và Tên              
 | ------ |:-------------:| ----------------------
 | 1      | 23520070      | Phạm Ngô Quốc Anh      
-| 2      | 19521383      | Võ Phạm Duy Đức        
+| 2      | 21520930      | Nguyễn Văn Đức Huy        
 | 3      | 19521326      | Trịnh Công Danh        
 
 ## GIỚI THIỆU MÔN HỌC

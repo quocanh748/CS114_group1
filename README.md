@@ -6,6 +6,7 @@
 </p>
 
 <h1 align="center"><b>MÁY HỌC</b></h>
+<h2 align="center"><b>Dự đoán bệnh tiểu đường</b></h>
 
 ## THÀNH VIÊN NHÓM
 | STT    | MSSV          | Họ và Tên              

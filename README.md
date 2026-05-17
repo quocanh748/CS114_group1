@@ -41,6 +41,7 @@ pip install fastapi uvicorn pydantic joblib pandas numpy scikit-learn xgboost
 └── script.js
 ```
 3. Khởi chạy Ứng dụng
+   
   Cách 1: Chạy trực tiếp file python
   ```bash
   python app.py
@@ -51,7 +52,8 @@ pip install fastapi uvicorn pydantic joblib pandas numpy scikit-learn xgboost
   ```
 
 4. Truy cập giao diện và sử dụng
-   Sau khi khởi chạy thành công, mở trình duyệt web và truy cập vào đường dẫn:
-   ```bash
-   http://127.0.0.1:8000
-   ```
+   
+Sau khi khởi chạy thành công, mở trình duyệt web và truy cập vào đường dẫn:
+```bash
+http://127.0.0.1:8000
+```

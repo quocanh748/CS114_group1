@@ -21,8 +21,8 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
 
         if (result.status === 'success') {
             updateUI(
-                result.rf_prediction, 
-                result.rf_probability, 
+                result.rf_prediction,
+                result.rf_probability,
                 result.logistic_prediction,
                 result.xgb_prediction,
                 result.xgb_probability
@@ -47,7 +47,7 @@ function updateUI(rfPred, rfProb, logPred, xgbPred, xgbProb) {
     // 1. Random Forest Box (Keep label as requested)
     predictionResult.className = 'prediction-box visible';
     const rfPercent = Math.round(rfProb * 100);
-    
+
     if (rfPred === 1) {
         predictionResult.innerText = `Random Forest: Có nguy cơ. (Xác suất: ${rfPercent}%)`;
         predictionResult.classList.add('positive');
@@ -73,7 +73,7 @@ function updateUI(rfPred, rfProb, logPred, xgbPred, xgbProb) {
     // 3. XGBoost Box
     xgbResult.className = 'prediction-box info visible';
     const xgbPercent = Math.round(xgbProb * 100);
-    
+
     if (xgbPred === 1) {
         xgbResult.innerText = `XGBoost: Có nguy cơ. (Xác suất: ${xgbPercent}%)`;
         xgbResult.style.color = 'var(--danger)';

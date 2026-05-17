@@ -8,7 +8,7 @@
 <h1 align="center"><b>MÁY HỌC</b></h>
 <h2 align="center"><b>Dự đoán bệnh tiểu đường</b></h>
 
-## THÀNH VIÊN NHÓM
+## THÀNH VIÊN NHÓM 1
 | STT    | MSSV          | Họ và Tên              
 | ------ |:-------------:| ----------------------
 | 1      | 23520070      | Phạm Ngô Quốc Anh      

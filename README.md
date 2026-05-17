@@ -25,7 +25,7 @@
 ### HƯỚNG DẪN CHẠY DEMO
 
 1. Yêu cầu hệ thống & Cài đặt thư viện
-2. 
+   
 Trước khi chạy, hãy đảm bảo bạn đã cài đặt Python (khuyến nghị phiên bản 3.8 trở lên). Sau đó, cài đặt các thư viện cần thiết bằng lệnh sau:
 
 ```bash

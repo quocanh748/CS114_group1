@@ -24,40 +24,40 @@
 
 ### HƯỚNG DẪN CHẠY DEMO
 
-1. Yêu cầu hệ thống & Cài đặt thư viện
-   
-Trước khi chạy, hãy đảm bảo bạn đã cài đặt Python (khuyến nghị phiên bản 3.8 trở lên). Sau đó, cài đặt các thư viện cần thiết bằng lệnh sau:
+1. **Cài đặt thư viện**
 
 ```bash
-pip install fastapi uvicorn pydantic joblib pandas numpy scikit-learn xgboost
+pip install flask joblib pandas numpy scikit-learn xgboost
 ```
 
-2. Cấu trúc thư mục chuẩn bị
-Để ứng dụng hoạt động chính xác, hãy đảm bảo cấu trúc các file trong repo của bạn tuân thủ định dạng sau (đặc biệt là các file mô hình .pkl nằm trong thư mục Model):
-```bash
+2. **Cấu trúc thư mục**
+
+```
 ├── Model/
+│   ├── diabetes_logistic_classifier.pkl
+│   ├── diabetes_rf_model.pkl
+│   ├── scaler_logistic.pkl
+│   └── logistic_feature_cols.pkl
+├── Train/
+│   ├── Diab_pyth_data_clean.csv
 │   ├── diabetes_xgb_model.pkl
-│   ├── logistic_regression.pkl
-│   └── random_forest_diabetes_model.pkl
-├── app.py
-├── index.html
-├── style.css
-└── script.js
+│   └── save_scaler.py
+├── Preprocess/
+│   ├── diabetes.csv
+│   └── eda.ipynb
+└── app_web.py
 ```
-3. Khởi chạy Ứng dụng
-   
-  Cách 1: Chạy trực tiếp file python
-  ```bash
-  python app.py
-  ```
-  Cách 2: Sử dụng lệnh uvicorn
-  ```bash
-  uvicorn app:app --host 127.0.0.1 --port 8000 --reload
-  ```
 
-4. Truy cập giao diện và sử dụng
-   
-Sau khi khởi chạy thành công, mở trình duyệt web và truy cập vào đường dẫn:
+3. **Khởi chạy ứng dụng**
+
 ```bash
-http://127.0.0.1:8000
+python app_web.py
 ```
+
+Trình duyệt sẽ tự động mở tại `http://127.0.0.1:5000`
+
+4. **Nhập thông số và dự đoán**
+
+Điền các chỉ số lâm sàng (tuổi, chiều cao cm, cân nặng kg, huyết áp, chỉ số máu…) rồi nhấn **DỰ ĐOÁN NGAY** để xem kết quả từ 3 mô hình: Random Forest, XGBoost, Logistic Regression.
+
+> **Lưu ý:** Nếu file `scaler_logistic.pkl` chưa tồn tại, chạy `python Train/save_scaler.py` một lần để tạo scaler cho Logistic Regression.

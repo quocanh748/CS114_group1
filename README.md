@@ -35,6 +35,7 @@ pip install flask joblib pandas numpy scikit-learn xgboost
 ```
 ├── Model/
 │   ├── diabetes_logistic_classifier.pkl
+|   |── diabetes_xgb_model.pkl
 │   ├── diabetes_rf_model.pkl
 │   ├── scaler_logistic.pkl
 │   └── logistic_feature_cols.pkl
